@@ -1,6 +1,5 @@
 #ifndef STAT_H_
 #define STAT_H_
-#include "uthash.h"
 #include <dirent.h>
 #include <unistd.h>
 

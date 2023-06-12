@@ -1,11 +1,9 @@
 #include "proc.h"
 #include "stat.h"
-#include "uthash.h"
 #include "utils.h"
 #include <alloca.h>
 #include <assert.h>
 #include <malloc.h>
-#include "uthash.h"
 
 ProcInfo * procInfoHash = NULL;
 
