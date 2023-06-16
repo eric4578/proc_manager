@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <dirent.h>
 
 // return a pointer to the start of the (step+1)th token and its length
 // mention that you should support ()
@@ -17,4 +18,8 @@ int readToken(Token * token, const char * string, int step){
     // END of your code
     }while(step-- > 0);
     return TOKEN_SUCC;
+}
+
+void printError() {
+    printf(("option error!"));
 }

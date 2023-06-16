@@ -8,4 +8,7 @@ typedef struct {
 enum TOKEN_CODE {TOKEN_SUCC=0, TOKEN_BADARG, TOKEN_EARLYEND};
 
 int readToken(Token * t, const char * string, int pos);
+
+void printError();
+
 #endif

@@ -12,6 +12,8 @@
 #define READBUFSIZE (256)
 static char readBuf[READBUFSIZE];
 
+#define DIRPATH "/proc"
+
 /***************************/ 
 void initProcInfo();
 
@@ -35,7 +37,19 @@ size_t calProcGroupMemUse(ProcInfo * node);
 
 ProcInfo * syncProcInfo();
 
+TreeNode * readProcTree(ProcInfo *LinkHead);
+
+void printProcLink(ProcInfo *LinkHead);
+
+void printProcTree(TreeNode *root);
+
+void printTreeNode(TreeNode *n) ;
+
 void destory();
+
+void destoryProcLink(ProcInfo * head);
+
+int is_pid_folder(const struct dirent *entry);
 /***************************/ 
 
 #endif
